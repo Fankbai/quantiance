@@ -3,7 +3,7 @@
 # @Date    : 2019-09-19 20:34:55
 # @Author  : Cypress McCarthy Bai 
 # @Link    : mr.baishu@gmail.com
-# @Version : $Id$
+# @Version : 1.0
 
 import tushare
 import tushare as ts
@@ -48,10 +48,7 @@ endtime = timeTemp.strftime('%Y%m%d')
 
 # 用于清洗某个股票某天的股价 并存储数据库   
 async def get_StockDayPrice(rawData):
-    #清洗数据中的'nan',使用-1替代
-    # db = pymysql.connect(**dbconfig)    #协程里面不要使用connect
-    # cursor = db.cursor()
-    
+    #清洗数据中的'nan',使用-1替代 
     cleanData = list(map(lambda x: -1 if x =='nan' else x, rawData))   
     state_dt=(datetime.datetime.strptime(cleanData[1], "%Y%m%d")).strftime('%Y-%m-%d')
     #print(state_dt,cleanData)
