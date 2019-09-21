@@ -17,8 +17,8 @@ from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 
 import pymysql
 
-ts.set_token('a137962cac5e3806501ec16e4007e4475ab7d8cd703204bb5a260d29')
-pro = ts.pro_api('a137962cac5e3806501ec16e4007e4475ab7d8cd703204bb5a260d29')
+ts.set_token('xxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+pro = ts.pro_api('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
 dbconfig = {'host': '127.0.0.1',
             'user' : 'root',
