@@ -22,7 +22,7 @@ pro = ts.pro_api('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
 dbconfig = {'host': '127.0.0.1',
             'user' : 'root',
-            'passwd' : 'hao123',
+            'passwd' : 'admin',
             'db' : 'stock',
             'port' : 3306,
             'charset' : 'utf8'
